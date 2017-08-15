@@ -100,6 +100,15 @@ section.success {
     .scroll-top .btn:focus {
       outline: none; }
 
+.standard-title {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.standard-text {
+  font-size: 25px;
+}
+
 #mainNav {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
