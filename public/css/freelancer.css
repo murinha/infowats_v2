@@ -105,8 +105,17 @@ section.success {
   margin-bottom: 20px;
 }
 
+.standard-img {
+    height: 200px;
+    width: 200px;
+}
+
 .standard-text {
   font-size: 25px;
+}
+
+.division{
+  border-top: 2px solid #8c8b8b;
 }
 
 #mainNav {
