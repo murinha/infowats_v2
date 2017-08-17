@@ -461,3 +461,25 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+.checkbox-style{
+font-size: 20px;
+    margin-top: 40px;}
+  .leftcolumn {
+     width: 250px;
+     padding: 0;
+     margin: 0;
+     display: block;
+     position: fixed;
+     text-align: initial;
+  }
+
+  .rightcolumn {
+     width: 750px;
+     display: block;
+     float: left;
+     text-align: initial;
+     margin-left: 500px;
+  }
+
+}
