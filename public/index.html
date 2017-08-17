@@ -114,7 +114,7 @@
               <div class="caption">
                 <div class="caption-content">
                   <div class="text-center standard-text tec-desc">Java é uma linguagem de programação interpretada orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.
-                  </div>  
+                  </div>
                 </div>
               </div>
               <img class="standard-img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9SLTLCA2FMVq5aoIfQrw05oNEL157dZfADZ12p8JGSKFUkJ74f5qyO2YI" alt="">
@@ -191,6 +191,7 @@
               <div id="success"></div>
               <div class="form-group">
                 <button type="button" class="btn btn-success btn-lg" onclick="cadastrar()">Enviar</button>
+                <button id="onboarding-btn" type="submit" class="btn btn-success btn-lg">Cadastre-se</button>
               </div>
             </form>
           </div>
@@ -495,9 +496,15 @@
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
 
+    <script type="text/javascript">
+      document.getElementById("onboarding-btn").onclick = function () {
+          location.href="pag1Onboarding.html";
+      };
+    </script>
+
     <script>
       function cadastrar() {
-        console.log('Enviando evento de cadastro...');        
+        console.log('Enviando evento de cadastro...');
         ga('send', 'event', 'click', 'Cadastro');
       }
     </script>
