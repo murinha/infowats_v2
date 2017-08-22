@@ -1,1 +1,2 @@
-launchConfigurations/
+# Dependency directories
+node_module
