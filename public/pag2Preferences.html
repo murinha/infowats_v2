@@ -60,22 +60,43 @@
         <div class="col-lg-8 mx-auto text-center checkbox-style">
 
             <form class="leftcolumn">
-              <input type="checkbox" name="category" value="Development"> Desenvolvimento<br>
-              <input type="checkbox" name="category" value="Testing" checked> Teste de Software<br>
-              <input type="checkbox" name="category" value="Management"> Gestão de Software<br>
+              <input type="checkbox" id="dev" name="category" value="Development" onclick='buildlist("development");'> Desenvolvimento<br>
+              <input type="checkbox" id="test" name="category" value="Testing" onclick='buildlist("test");'> Teste de Software<br>
+              <input type="checkbox" id="software" name="category" value="Management" onclick='buildlist("management");'> Gestão de Software<br>
             </form>
 
             <form class="rightcolumn">
-              <input type="checkbox" name="category" value="Agile"> Metodologias Ágeis<br>
-              <input type="checkbox" name="category" value="BackEnd"> Software Back-End<br>
-              <input type="checkbox" name="category" value="FrontEnd"> Softwares Front-End<br>
+              <input type="checkbox" id="agile" name="category" value="Agile" onclick='buildlist("agile");'> Metodologias Ágeis<br>
+              <input type="checkbox" id="backend" name="category" value="BackEnd" onclick='buildlist("backend");'> Software Back-End<br>
+              <input type="checkbox" id="frontend" name="category" value="FrontEnd" onclick='buildlist("frontend");'> Softwares Front-End<br>
             </form>
+
+
 
         </div>
         <div class="col-lg-8 mx-auto text-center">
             <a href="pag3MainPage.html" class="btn btn-lg btn-outline">
               Deixa eu ver esse negócio ae!
             </a>
+            <button onclick='send()'>
+              Deixa eu ver esse negócio ae!
+            </button>
+
+            <script>
+              var choices=[];
+
+              function buildlist(listName){
+                console.log(listName);
+                choices.push(listName);
+                console.log(choices);
+              }
+
+              function send(){
+                console.log(choices);
+                location.href='pag3MainPage.html?choices='+choices;
+              }
+            </script>
+
         </div>
       </div>
     </header>
@@ -95,6 +116,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+
 
   </body>
 
