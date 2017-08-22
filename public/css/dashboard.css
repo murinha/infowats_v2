@@ -483,4 +483,11 @@ font-size: 20px;
      margin-left: 500px;
   }
 
+  .contentul {
+    list-style: none;
+  }
+  .contentlink {
+    color: white;
+  }
+
 }
